@@ -1,0 +1,57 @@
+body {
+  width : 50% ;
+  margin: auto;
+}
+
+#header {
+  text-align:center ;
+  color : green ;
+  font-size: 2.5em ;
+  }
+
+  hr {
+    margin-top : -25px ;
+    margin-bottom : 60px ;
+    width: 40% ;
+  }
+
+  ul {
+    display: inline !important ;
+  }
+  li{
+      	display: table;
+    	font-size : 2em  ;
+		  border : 2px dashed gray ;
+        position : relative  ;
+        color : gray ;
+        width : 80% ;
+        padding : 6px ;
+        margin : 10px auto  ;
+
+
+    }
+
+    #online{
+      color: green ;
+    }
+
+    .verticalcetner {
+    	  width : 1.3em;
+        height: 90% ;
+
+        display: table-cell;
+  		  vertical-align: middle;
+        border-radius : 100% ;
+       	position:relative ;
+         }
+
+    img {
+
+
+      position : absolute ;
+      width :100% ;
+      height: 90% ;
+      border-radius : 100% ;
+      top:5% ;
+
+    }

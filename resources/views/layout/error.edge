@@ -1,0 +1,12 @@
+
+@if(old('error'))
+<div class="alert alert-danger" style="margin:10px">
+  <ul>
+    @each(error in old('error'))
+      <li>
+           {{error}}
+      </li>
+    @endeach
+  </ul>
+</div>
+@endif

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  {{ style('chat/index') }}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+  <h3 id='header' >online users </h3>
+
+  <hr>
+
+
+  <ul>
+  </ul>
+
+  
+
+
+
+
+
+
+<script>
+  window.username = '{{username}}' ;
+  window.href = {{href}} ;
+</script>
+
+  {{ script('https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js') }}
+  {{ script('https://unpkg.com/@adonisjs/websocket-client@1.0.9/dist/Ws.browser.js') }}
+  {{ script('https://unpkg.com/jquery@3.3.1/dist/jquery.js') }}
+  {{ script('chat/index.js') }}
+</body>
+</html>

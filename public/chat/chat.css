@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700');
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  background-color: #f3f3f3;
+  color: #646464;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+.chat-container {
+  height: calc(100vh);
+  width: 50%;
+  margin: 0 auto;
+}
+
+.chat-wrapper {
+  height: 100%;
+  background: #fff;
+  box-shadow: 1px 1px 16px 7px #e8e8e8;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.messages {
+  height: 92%;
+  background: #f3f3f3;
+}
+
+.chat-window {
+    height: 92%;
+    background: whitesmoke;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 40px 0px;
+}
+
+.messageholder{
+  background: #ebebeb;
+  border-radius: 20px;
+  padding: 3px 9px;
+  display: inline-block;
+  max-width: 47%;
+  word-wrap: break-word;
+}
+
+#friendstatus{
+  color:gray ;
+}
+#loading {
+    height: 4em;
+    width: 4em;
+    margin: auto;
+    display: none ;
+}
+
+.time {
+    text-align: center;
+    color: rgb(153, 153, 153);
+    margin: 20px 0px;
+    font-size: .9em;
+}
+
+
+.input-wrapper {
+  height: 7%;
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+  background: gray;
+}
+
+.input-wrapper input {
+  width: 100%;
+  font-size: 16px;
+  padding: 7px 40px;
+  border: none;
+}
+
+.messages .message {
+  padding: 0 15px;
+  margin-bottom: 8px;
+}
+
+.messages .message h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.messages .message h3 span {
+  color: #999;
+  font-style: italic;
+}
+
+.onboard {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.onboard input {
+  font-size: 32px;
+  border: none;
+  padding: 0 40px;
+}
+
+.header {
+  padding: 10px 40px;
+  width: 100%;
+  background: #fff;
+  height: 8%;
+}
+
+.header h2 {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.header h2 span:first-child {
+  flex: 1;
+}
+
+#online-sign {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    display: inline-block;
+    border-radius: 100%;
+    float: left;
+    margin: 10px;
+}
+textarea {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 100%;
+  resize: none;
+  font-size: 1em;
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 1.2em;
+  height: 100%;
+  margin: 0px;
+  padding: 6px;
+  max-height: 5em;
+  border: none;
+}
+
+
+
+::-webkit-scrollbar {
+      width: 3px;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #909090;
+  border-radius: 100px;
+}

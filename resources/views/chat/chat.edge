@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  {{ style('chat/chat') }}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+
+  <div class="chat-container">
+    <div class="chat-wrapper">
+
+        <div class="header">
+          <span id='online-sign'></span>
+
+          <h2>
+            <span>chatting with {{ friend }}</span>
+          </h2>
+          <span id='friendstatus'>Offline</span>
+        </div>
+        <img id='loading' src="loading.gif" >
+        <div class="messages">
+          <div class='chat-window'>
+              <div class="chat-page">
+              </div>
+          </div>
+          <div class="input-wrapper">
+             <textarea type="text" id="message" placeholder="Enter message"></textarea autofocus="1">
+           </div>
+        </div>
+
+
+    </div>
+  </div>
+
+
+ <script>
+ const username = '{{username}}' ;
+ const href = {{href}} ;
+ const friend = '{{friend}}'  ;
+ </script>
+  {{ script('https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js') }}
+  {{ script('https://unpkg.com/@adonisjs/websocket-client@1.0.9/dist/Ws.browser.js') }}
+  {{ script('https://unpkg.com/jquery@3.3.1/dist/jquery.js') }}
+  {{ script('chat/chat.js') }}
+</body>
+</html>
